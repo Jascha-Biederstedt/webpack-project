@@ -1,5 +1,6 @@
 var webpack = require('webpack');
 var path = require('path');
+const { WebpackError } = require('webpack');
 
 const VENDOR_LIBS = [
   'faker',
@@ -36,4 +37,9 @@ module.exports = {
       },
     ],
   },
+  plugins: [
+    new webpack.optimize.CommonsChunkPlugin({
+      name: 'vendor',
+    }),
+  ],
 };
