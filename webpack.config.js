@@ -9,7 +9,6 @@ const VENDOR_LIBS = [
   'react-dom',
   'react-input-range',
   'react-redux',
-  'react-router',
   'redux',
   'redux-form',
   'redux-thunk',
